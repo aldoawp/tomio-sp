@@ -28,9 +28,9 @@ export default function Header() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Terms and Condition", href: "/terms" },
-    { name: "Privacy Policy", href: "/privacy" },
-    { name: "GDPR Policy", href: "/gdpr" },
+    { name: "Terms", href: "/terms" },
+    { name: "Privacy", href: "/privacy" },
+    { name: "GDPR", href: "/gdpr" },
   ];
 
   return (
