@@ -1,46 +1,54 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { usePathname } from "next/navigation"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
-  const pathname = usePathname()
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10)
-    }
+      setIsScrolled(window.scrollY > 10);
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
-  ]
+    { name: "Terms and Condition", href: "/terms" },
+    { name: "Privacy Policy", href: "/privacy" },
+    { name: "GDPR Policy", href: "/gdpr" },
+  ];
 
   return (
     <header
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
-        isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent",
+        isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent"
       )}
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="text-2xl font-bold tracking-tight">
-          Tomio
+          <Image
+            src="tomio-logo-transparent.png"
+            alt="Brand Logo"
+            width={100}
+            height={100}
+            className="object-contain"
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -51,7 +59,9 @@ export default function Header() {
               href={link.href}
               className={cn(
                 "text-sm font-medium transition-colors hover:text-primary",
-                pathname === link.href ? "text-primary" : "text-muted-foreground",
+                pathname === link.href
+                  ? "text-primary"
+                  : "text-muted-foreground"
               )}
             >
               {link.name}
@@ -66,7 +76,11 @@ export default function Header() {
         </div>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden" onClick={toggleMenu} aria-label="Toggle menu">
+        <button
+          className="md:hidden"
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
@@ -81,7 +95,9 @@ export default function Header() {
                 href={link.href}
                 className={cn(
                   "text-sm font-medium py-2 transition-colors hover:text-primary",
-                  pathname === link.href ? "text-primary" : "text-muted-foreground",
+                  pathname === link.href
+                    ? "text-primary"
+                    : "text-muted-foreground"
                 )}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -97,6 +113,5 @@ export default function Header() {
         </div>
       )}
     </header>
-  )
+  );
 }
-

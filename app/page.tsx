@@ -1,23 +1,30 @@
-"use client"
+"use client";
 
-import { useRef } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { CheckCircle, ArrowRight, Instagram, TwitterIcon as TikTok, BarChart, Target } from "lucide-react"
-import { motion, useInView } from "framer-motion"
+import { useRef } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  CheckCircle,
+  ArrowRight,
+  Instagram,
+  TwitterIcon as TikTok,
+  BarChart,
+  Target,
+} from "lucide-react";
+import { motion, useInView } from "framer-motion";
+import { Button } from "@/components/ui/button";
 
-const MotionDiv = motion.div
+const MotionDiv = motion.div;
 
 export default function Home() {
-  const ref1 = useRef(null)
-  const ref2 = useRef(null)
-  const ref3 = useRef(null)
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
 
-  const isInView1 = useInView(ref1, { once: true, margin: "-100px" })
-  const isInView2 = useInView(ref2, { once: true, margin: "-100px" })
-  const isInView3 = useInView(ref3, { once: true, margin: "-100px" })
+  const isInView1 = useInView(ref1, { once: true, margin: "-100px" });
+  const isInView2 = useInView(ref2, { once: true, margin: "-100px" });
+  const isInView3 = useInView(ref3, { once: true, margin: "-100px" });
 
   return (
     <>
@@ -32,11 +39,12 @@ export default function Home() {
               className="space-y-6"
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-                Grow Your Online Presence <span className="text-primary">Organically</span>
+                Grow Your Online Presence{" "}
+                <span className="text-primary">Organically</span>
               </h1>
               <p className="text-xl text-muted-foreground">
-                Strategic consulting to help entrepreneurs and small businesses thrive on Instagram & TikTok without
-                paid ads.
+                Strategic consulting to help entrepreneurs and small businesses
+                thrive on Instagram & TikTok without paid ads.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" asChild>
@@ -57,7 +65,7 @@ export default function Home() {
             >
               <div className="relative h-[400px] w-full rounded-xl overflow-hidden shadow-xl">
                 <Image
-                  src="/placeholder.svg?height=800&width=600"
+                  src="/home-hero.jpg"
                   alt="Digital marketing strategy session"
                   fill
                   className="object-cover"
@@ -89,9 +97,12 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Our Services
+            </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              We specialize in helping you grow your online presence through sustainable, non-paid strategies.
+              We specialize in helping you grow your online presence through
+              sustainable, non-paid strategies.
             </p>
           </MotionDiv>
 
@@ -108,10 +119,15 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold mb-2">Instagram Strategy</h3>
                   <p className="text-muted-foreground">
-                    Develop a content strategy that increases engagement, followers, and conversions on Instagram.
+                    Develop a content strategy that increases engagement,
+                    followers, and conversions on Instagram.
                   </p>
                   <ul className="mt-4 space-y-2">
-                    {["Content planning", "Engagement tactics", "Growth strategies"].map((item, i) => (
+                    {[
+                      "Content planning",
+                      "Engagement tactics",
+                      "Growth strategies",
+                    ].map((item, i) => (
                       <li key={i} className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
                         <span className="text-sm">{item}</span>
@@ -134,10 +150,15 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold mb-2">TikTok Growth</h3>
                   <p className="text-muted-foreground">
-                    Create viral-worthy content that expands your reach and builds your brand on TikTok.
+                    Create viral-worthy content that expands your reach and
+                    builds your brand on TikTok.
                   </p>
                   <ul className="mt-4 space-y-2">
-                    {["Trend analysis", "Content creation", "Audience building"].map((item, i) => (
+                    {[
+                      "Trend analysis",
+                      "Content creation",
+                      "Audience building",
+                    ].map((item, i) => (
                       <li key={i} className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
                         <span className="text-sm">{item}</span>
@@ -160,10 +181,15 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold mb-2">Brand Positioning</h3>
                   <p className="text-muted-foreground">
-                    Define your unique voice and position in the market to stand out from competitors.
+                    Define your unique voice and position in the market to stand
+                    out from competitors.
                   </p>
                   <ul className="mt-4 space-y-2">
-                    {["Brand identity", "Competitive analysis", "Audience targeting"].map((item, i) => (
+                    {[
+                      "Brand identity",
+                      "Competitive analysis",
+                      "Audience targeting",
+                    ].map((item, i) => (
                       <li key={i} className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
                         <span className="text-sm">{item}</span>
@@ -186,9 +212,12 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">How It Works</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              How It Works
+            </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Our proven process to help you achieve sustainable growth on social media.
+              Our proven process to help you achieve sustainable growth on
+              social media.
             </p>
           </MotionDiv>
 
@@ -219,12 +248,16 @@ export default function Home() {
               <MotionDiv
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
-                animate={isInView2 ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                animate={
+                  isInView2 ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+                }
                 transition={{ duration: 0.5, delay: item.delay }}
                 className="relative"
               >
                 <div className="bg-muted p-8 rounded-xl h-full">
-                  <div className="text-4xl font-bold text-primary/20 mb-4">{item.step}</div>
+                  <div className="text-4xl font-bold text-primary/20 mb-4">
+                    {item.step}
+                  </div>
                   <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                   <p className="text-muted-foreground">{item.description}</p>
                 </div>
@@ -254,9 +287,12 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              What Our Clients Say
+            </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Don't just take our word for it. Here's what our clients have achieved with our help.
+              Don't just take our word for it. Here's what our clients have
+              achieved with our help.
             </p>
           </MotionDiv>
 
@@ -267,7 +303,7 @@ export default function Home() {
                 business: "Wellness Coach",
                 quote:
                   "Working with Tomio transformed my social media presence. I've gained over 10,000 followers in just 3 months and my engagement has tripled!",
-                image: "/placeholder.svg?height=100&width=100",
+                image: "/people-1.webp",
                 delay: 0.1,
               },
               {
@@ -275,7 +311,7 @@ export default function Home() {
                 business: "E-commerce Store Owner",
                 quote:
                   "The strategies Tomio provided helped me increase my conversion rate by 45%. My TikTok now drives consistent traffic to my store every day.",
-                image: "/placeholder.svg?height=100&width=100",
+                image: "/people-2.webp",
                 delay: 0.2,
               },
               {
@@ -283,14 +319,16 @@ export default function Home() {
                 business: "Fitness Influencer",
                 quote:
                   "Tomio helped me refine my brand messaging and content strategy. I'm now working with major brands and have doubled my income.",
-                image: "/placeholder.svg?height=100&width=100",
+                image: "/people-3.webp",
                 delay: 0.3,
               },
             ].map((testimonial, i) => (
               <MotionDiv
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
-                animate={isInView3 ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                animate={
+                  isInView3 ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+                }
                 transition={{ duration: 0.5, delay: testimonial.delay }}
               >
                 <Card className="h-full">
@@ -306,10 +344,14 @@ export default function Home() {
                       </div>
                       <div>
                         <h4 className="font-medium">{testimonial.name}</h4>
-                        <p className="text-sm text-muted-foreground">{testimonial.business}</p>
+                        <p className="text-sm text-muted-foreground">
+                          {testimonial.business}
+                        </p>
                       </div>
                     </div>
-                    <p className="italic text-muted-foreground">"{testimonial.quote}"</p>
+                    <p className="italic text-muted-foreground">
+                      "{testimonial.quote}"
+                    </p>
                   </CardContent>
                 </Card>
               </MotionDiv>
@@ -323,10 +365,12 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="bg-primary/10 rounded-2xl p-8 md:p-12">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Grow Your Online Presence?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Ready to Grow Your Online Presence?
+              </h2>
               <p className="text-lg mb-8">
-                Book a free consultation today and discover how we can help you achieve sustainable growth on Instagram
-                and TikTok.
+                Book a free consultation today and discover how we can help you
+                achieve sustainable growth on Instagram and TikTok.
               </p>
               <Button size="lg" asChild>
                 <Link href="/contact">Book Your Free Consultation</Link>
@@ -336,6 +380,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  )
+  );
 }
-
