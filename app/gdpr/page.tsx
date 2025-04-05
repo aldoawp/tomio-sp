@@ -1,140 +1,178 @@
-import Link from "next/link"
+import Link from "next/link";
 
 export default function GDPRPage() {
   return (
     <div className="container mx-auto px-4 py-32 md:py-40">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold mb-8">GDPR Policy</h1>
+        <h1 className="text-4xl font-bold mb-8">Kebijakan GDPR</h1>
 
         <div className="prose prose-lg max-w-none">
           <p>
-            At Tomio, we are committed to protecting and respecting your privacy in compliance with the EU General Data
-            Protection Regulation (GDPR).
+            Di Tomio, kami berkomitmen untuk melindungi dan menghormati privasi
+            Anda sesuai dengan data umum UE Peraturan Perlindungan (GDPR).
           </p>
 
-          <h2>1. Data Controller</h2>
+          <h2>1. Pengontrol data</h2>
           <p>
-            Tomio is the data controller for the personal information we collect and process. If you have any questions
-            about this policy, or how we handle your personal data, please contact us at{" "}
-            <Link href="mailto:contact@tomio.com" className="text-primary hover:underline">
+            Tomio adalah pengontrol data untuk informasi pribadi yang kami
+            kumpulkan dan diproses.Jika Anda memiliki pertanyaan tentang
+            kebijakan ini, atau bagaimana kami menangani data pribadi Anda,
+            silakan hubungi kami di{" "}
+            <Link
+              href="mailto:contact@tomio.com"
+              className="text-primary hover:underline"
+            >
               contact@tomio.com
             </Link>
             .
           </p>
 
-          <h2>2. Your Rights Under GDPR</h2>
-          <p>Under the GDPR, you have several rights regarding your personal data:</p>
-          <ul>
-            <li>
-              <strong>Right to Access:</strong> You have the right to request a copy of the personal data we hold about
-              you.
-            </li>
-            <li>
-              <strong>Right to Rectification:</strong> You have the right to request that we correct any inaccurate
-              personal data we hold about you.
-            </li>
-            <li>
-              <strong>Right to Erasure:</strong> You have the right to request that we delete your personal data in
-              certain circumstances.
-            </li>
-            <li>
-              <strong>Right to Restrict Processing:</strong> You have the right to request that we restrict the
-              processing of your personal data in certain circumstances.
-            </li>
-            <li>
-              <strong>Right to Data Portability:</strong> You have the right to request that we transfer your personal
-              data to another service provider in certain circumstances.
-            </li>
-            <li>
-              <strong>Right to Object:</strong> You have the right to object to the processing of your personal data in
-              certain circumstances.
-            </li>
-          </ul>
-
-          <h2>3. Data We Collect</h2>
-          <p>We collect and process the following categories of personal data:</p>
-          <ul>
-            <li>
-              <strong>Identity Data:</strong> Including first name, last name, username or similar identifier.
-            </li>
-            <li>
-              <strong>Contact Data:</strong> Including email address, telephone number, and address.
-            </li>
-            <li>
-              <strong>Technical Data:</strong> Including internet protocol (IP) address, browser type and version, time
-              zone setting and location, browser plug-in types and versions, operating system and platform, and other
-              technology on the devices you use to access our website.
-            </li>
-            <li>
-              <strong>Usage Data:</strong> Including information about how you use our website and services.
-            </li>
-          </ul>
-
-          <h2>4. Legal Basis for Processing</h2>
+          <h2> 2.Hak Anda di bawah GDPR </h2>
           <p>
-            We will only process your personal data when the law allows us to. Most commonly, we will use your personal
-            data in the following circumstances:
-          </p>
-          <ul>
-            <li>Where we need to perform the contract we are about to enter into or have entered into with you.</li>
-            <li>
-              Where it is necessary for our legitimate interests (or those of a third party) and your interests and
-              fundamental rights do not override those interests.
-            </li>
-            <li>Where we need to comply with a legal obligation.</li>
-            <li>Where you have given us consent to process your personal data for a specific purpose.</li>
-          </ul>
-
-          <h2>5. Data Retention</h2>
-          <p>
-            We will only retain your personal data for as long as necessary to fulfill the purposes we collected it for,
-            including for the purposes of satisfying any legal, accounting, or reporting requirements.
-          </p>
-
-          <h2>6. International Transfers</h2>
-          <p>
-            We may transfer your personal data to countries outside the European Economic Area (EEA). Whenever we
-            transfer your personal data out of the EEA, we ensure a similar degree of protection is afforded to it by
-            ensuring at least one of the following safeguards is implemented:
+            {" "}
+            Di bawah GDPR, Anda memiliki beberapa hak mengenai data pribadi
+            Anda:{" "}
           </p>
           <ul>
             <li>
-              We will only transfer your personal data to countries that have been deemed to provide an adequate level
-              of protection for personal data by the European Commission.
+              <strong> hak untuk mengakses: </strong> Anda memiliki hak untuk
+              meminta salinan data pribadi yang kami miliki Anda.
             </li>
             <li>
-              Where we use certain service providers, we may use specific contracts approved by the European Commission
-              which give personal data the same protection it has in Europe.
+              <strong> hak untuk perbaikan: </strong> Anda memiliki hak untuk
+              meminta agar kami memperbaiki segala yang tidak akurat Data
+              pribadi yang kami miliki tentang Anda.
+            </li>
+            <li>
+              <strong> hak untuk penghapusan: </strong> Anda memiliki hak untuk
+              meminta kami menghapus data pribadi Anda keadaan tertentu.
+            </li>
+            <li>
+              <strong> hak untuk membatasi pemrosesan: </strong> Anda memiliki
+              hak untuk meminta kami membatasi pemrosesan data pribadi Anda
+              dalam keadaan tertentu.
+            </li>
+            <li>
+              <strong> Hak atas portabilitas data: </strong> Anda berhak untuk
+              meminta kami mentransfer data pribadi Anda ke layanan lain
+              penyedia dalam keadaan tertentu.
+            </li>
+            <li>
+              <strong> hak untuk keberatan: </strong> Anda memiliki hak untuk
+              keberatan pemrosesan data pribadi Anda dalam keadaan tertentu.
             </li>
           </ul>
 
-          <h2>7. Data Security</h2>
+          <h2> 3.Data yang kami kumpulkan </h2>
+          <p>Kami mengumpulkan dan memproses kategori data pribadi berikut:</p>
+          <ul>
+            <li>
+              <strong> data identitas: </strong> termasuk nama depan, nama
+              belakang, nama pengguna atau pengidentifikasi serupa.
+            </li>
+            <li>
+              <strong> Data Kontak: </strong> termasuk alamat email, telepon
+              nomor, dan alamat.
+            </li>
+            <li>
+              <strong> data teknis: </strong> termasuk protokol internet (IP)
+              Alamat, jenis dan versi browser, pengaturan dan lokasi zona waktu,
+              Jenis dan versi plug-in browser, sistem operasi dan platform, dan
+              teknologi lain di perangkat yang Anda gunakan untuk mengakses
+              situs web kami.
+            </li>
+            <li>
+              <strong> data penggunaan: </strong> termasuk informasi tentang
+              bagaimana Anda Gunakan situs web dan layanan kami.
+            </li>
+          </ul>
+
+          <h2> 4.Dasar hukum untuk pemrosesan </h2>
           <p>
-            We have put in place appropriate security measures to prevent your personal data from being accidentally
-            lost, used, or accessed in an unauthorized way, altered, or disclosed. In addition, we limit access to your
-            personal data to those employees, agents, contractors, and other third parties who have a business need to
-            know.
+            Kami hanya akan memproses data pribadi Anda ketika undang -undang
+            mengizinkan kami untuk melakukannya. Paling umum, kami akan
+            menggunakan data pribadi Anda sebagai berikut keadaan:
+          </p>
+          <ul>
+            <li>
+              Di mana kita perlu melakukan kontrak yang akan kita ikuti atau
+              telah masuk dengan Anda.
+            </li>
+            <li>
+              Di mana diperlukan untuk kepentingan sah kita (atau dari a pihak
+              ketiga) dan kepentingan Anda dan hak -hak mendasar tidak
+              mengesampingkan minat itu.
+            </li>
+            <li> Di mana kita harus mematuhi kewajiban hukum. </li>
+            <li>
+              Di mana Anda telah memberi kami persetujuan untuk memproses data
+              pribadi Anda tujuan tertentu.
+            </li>
+          </ul>
+
+          <h2> 5.Retensi Data </h2>
+          <p>
+            Kami hanya akan menyimpan data pribadi Anda selama yang diperlukan
+            memenuhi tujuan yang kami kumpulkan, termasuk untuk tujuan memuaskan
+            persyaratan hukum, akuntansi, atau pelaporan apa pun.
           </p>
 
-          <h2>8. Changes to This Policy</h2>
+          <h2> 6.Transfer Internasional </h2>
           <p>
-            We may update this GDPR Policy from time to time. We will notify you of any changes by posting the new
-            policy on this page and updating the "Last Updated" date.
+            Kami dapat mentransfer data pribadi Anda ke negara -negara di luar
+            Eropa Area Ekonomi (EEA).Setiap kali kami mentransfer data pribadi
+            Anda EEA, kami memastikan tingkat perlindungan yang sama diberikan
+            kepadanya Dengan memastikan setidaknya satu dari perlindungan
+            berikut diimplementasikan:
+          </p>
+          <ul>
+            <li>
+              Kami hanya akan mentransfer data pribadi Anda ke negara -negara
+              yang memiliki dianggap memberikan tingkat perlindungan yang
+              memadai Data pribadi oleh Komisi Eropa.
+            </li>
+            <li>
+              Di mana kami menggunakan penyedia layanan tertentu, kami dapat
+              menggunakan spesifik Kontrak yang disetujui oleh Komisi Eropa yang
+              memberikan pribadi Data Perlindungan yang sama di Eropa.
+            </li>
+          </ul>
+
+          <h2> 7.Keamanan Data </h2>
+          <p>
+            Kami telah menempatkan langkah -langkah keamanan yang tepat untuk
+            mencegah Anda Data pribadi karena hilang, digunakan, atau diakses
+            secara tidak sengaja cara yang tidak sah, diubah, atau
+            diungkapkan.Selain itu, kami membatasi Akses ke data pribadi Anda ke
+            karyawan, agen, kontraktor, dan pihak ketiga lainnya yang memiliki
+            kebutuhan bisnis tahu.
           </p>
 
-          <h2>9. Contact Us</h2>
+          <h2> 8.Perubahan Kebijakan ini </h2>
           <p>
-            If you have any questions about this GDPR Policy, please contact us at{" "}
-            <Link href="mailto:contact@tomio.com" className="text-primary hover:underline">
+            Kami dapat memperbarui kebijakan GDPR ini dari waktu ke waktu.Kami
+            akan memberi tahu Anda setiap perubahan dengan memposting kebijakan
+            baru di halaman ini dan memperbarui Tanggal "Terakhir Diperbarui".
+          </p>
+
+          <h2> 9.Hubungi kami </h2>
+          <p>
+            Jika Anda memiliki pertanyaan tentang kebijakan GDPR ini, silakan
+            hubungi kami pada{" "}
+            <Link
+              href="mailto:contact@tomio.com"
+              className="text-primary hover:underline"
+            >
               contact@tomio.com
             </Link>
             .
           </p>
 
-          <p className="mt-8">Last updated: {new Date().toLocaleDateString()}</p>
+          <p className="mt-8">
+            Terakhir diperbarui: {new Date().toLocaleDateString()}
+          </p>
         </div>
       </div>
     </div>
-  )
+  );
 }
-

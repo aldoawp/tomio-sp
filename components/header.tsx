@@ -27,9 +27,9 @@ export default function Header() {
   };
 
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "Terms", href: "/terms" },
-    { name: "Privacy", href: "/privacy" },
+    { name: "Beranda", href: "/" },
+    { name: "Syarat & Ketentuan", href: "/syarat" },
+    { name: "Privasi", href: "/privasi" },
     { name: "GDPR", href: "/gdpr" },
   ];
 
@@ -71,7 +71,7 @@ export default function Header() {
 
         <div className="hidden md:block">
           <Button asChild>
-            <Link href="/contact">Book a Consultation</Link>
+            <Link href="/hubungi">Konsultasi Sekarang</Link>
           </Button>
         </div>
 
@@ -105,8 +105,8 @@ export default function Header() {
               </Link>
             ))}
             <Button asChild className="w-full mt-2">
-              <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
-                Book a Consultation
+              <Link href="/hubungi" onClick={() => setIsMenuOpen(false)}>
+                Konsultasi Sekarang
               </Link>
             </Button>
           </div>

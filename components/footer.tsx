@@ -12,58 +12,57 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-xl font-bold">Tomio</h3>
             <p className="text-muted-foreground text-sm">
-              Strategic consulting for entrepreneurs and small businesses to
-              grow their online presence through organic marketing.
+              Konsultasi Strategis untuk Pengusaha dan UMKM untuk menumbuhkan
+              kehadiran online mereka melalui pemasaran organik.
             </p>
           </div>
-
           <div>
-            <h4 className="font-medium mb-4">Quick Links</h4>
+            <h4 className="font-medium mb-4">Tautan cepat</h4>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Home
+                  Beranda
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href="/tentang"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  About
+                  Tentang Kami
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href="/hubungi"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Contact
+                  Hubungi
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-medium mb-4">Legal</h4>
+            <h4 className="font-medium mb-4">Legalitas</h4>
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/terms"
+                  href="/syarat"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Terms & Conditions
+                  Syarat dan Ketentuan
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/privacy"
+                  href="/privasi"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Privacy Policy
+                  Kebijakan Privasi
                 </Link>
               </li>
               <li>
@@ -71,7 +70,7 @@ export default function Footer() {
                   href="/cookies"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Cookie Policy
+                  Kebijakan Cookie
                 </Link>
               </li>
               <li>
@@ -79,7 +78,7 @@ export default function Footer() {
                   href="/gdpr"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  GDPR Policy
+                  Kebijakan GDPR
                 </Link>
               </li>
             </ul>
@@ -87,17 +86,17 @@ export default function Footer() {
 
           <div className="space-y-4">
             <h4 className="font-medium mb-4">
-              Ready to grow your online presence?
+              Siap untuk mengembangkan bisnis Anda?
             </h4>
             <Button asChild>
-              <Link href="/contact">Schedule a Free Consultation</Link>
+              <Link href="/hubungi">Booking Konsultasi Gratis</Link>
             </Button>
           </div>
         </div>
 
         <div className="mt-12 pt-6 border-t border-border">
           <p className="text-sm text-muted-foreground text-center">
-            © {currentYear} Tomio. All rights reserved.
+            © {currentYear} Tomio. Hak cipta dilindungi.
           </p>
         </div>
       </div>

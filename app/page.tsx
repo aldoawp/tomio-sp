@@ -39,20 +39,21 @@ export default function Home() {
               className="space-y-6"
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-                Grow Your Online Presence{" "}
-                <span className="text-primary">Organically</span>
+                Tumbuhkan Kehadiran Online Anda{" "}
+                <span className="text-primary">Secara Organik</span>
               </h1>
               <p className="text-xl text-muted-foreground">
-                Strategic consulting to help entrepreneurs and small businesses
-                thrive on Instagram & TikTok without paid ads.
+                Konsultasi strategis untuk membantu pengusaha dan UMKM
+                berkembang di Instagram & Tiktok tanpa iklan berbayar.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" asChild>
-                  <Link href="/contact">Book a Free Consultation</Link>
+                  <Link href="/hubungi">Pesan konsultasi gratis</Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
-                  <Link href="/about">
-                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                  <Link href="/tentang">
+                    Pelajari lebih lanjut{" "}
+                    <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
               </div>
@@ -78,7 +79,9 @@ export default function Home() {
                     <BarChart className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <p className="text-sm font-medium">Average Growth</p>
+                    <p className="text-sm font-medium">
+                      Pertumbuhan rata -rata
+                    </p>
                     <p className="text-xl font-bold">+127%</p>
                   </div>
                 </div>
@@ -98,11 +101,11 @@ export default function Home() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Our Services
+              Layanan kami
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              We specialize in helping you grow your online presence through
-              sustainable, non-paid strategies.
+              Kami berspesialisasi dalam membantu Anda menumbuhkan kehadiran
+              online Anda Strategi yang berkelanjutan dan tidak dibayar.
             </p>
           </MotionDiv>
 
@@ -117,16 +120,16 @@ export default function Home() {
                   <div className="bg-primary/10 p-3 rounded-full w-fit mb-4">
                     <Instagram className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Instagram Strategy</h3>
+                  <h3 className="text-xl font-bold mb-2">Strategi Instagram</h3>
                   <p className="text-muted-foreground">
-                    Develop a content strategy that increases engagement,
-                    followers, and conversions on Instagram.
+                    Mengembangkan strategi konten yang meningkatkan
+                    keterlibatan, pengikut, dan konversi di Instagram.
                   </p>
                   <ul className="mt-4 space-y-2">
                     {[
-                      "Content planning",
-                      "Engagement tactics",
-                      "Growth strategies",
+                      "Perencanaan konten",
+                      "Taktik keterlibatan",
+                      "Strategi pertumbuhan",
                     ].map((item, i) => (
                       <li key={i} className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
@@ -148,16 +151,16 @@ export default function Home() {
                   <div className="bg-primary/10 p-3 rounded-full w-fit mb-4">
                     <TikTok className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2">TikTok Growth</h3>
+                  <h3 className="text-xl font-bold mb-2">Pertumbuhan Tiktok</h3>
                   <p className="text-muted-foreground">
-                    Create viral-worthy content that expands your reach and
-                    builds your brand on TikTok.
+                    Membuat konten layak virus yang memperluas jangkauan Anda
+                    dan Membangun merek Anda di Tiktok.
                   </p>
                   <ul className="mt-4 space-y-2">
                     {[
-                      "Trend analysis",
-                      "Content creation",
-                      "Audience building",
+                      "Analisis tren",
+                      "Pembuatan konten",
+                      "Bangunan penonton",
                     ].map((item, i) => (
                       <li key={i} className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
@@ -179,16 +182,16 @@ export default function Home() {
                   <div className="bg-primary/10 p-3 rounded-full w-fit mb-4">
                     <Target className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Brand Positioning</h3>
+                  <h3 className="text-xl font-bold mb-2">Posisi Merek</h3>
                   <p className="text-muted-foreground">
-                    Define your unique voice and position in the market to stand
-                    out from competitors.
+                    Tentukan suara dan posisi unik Anda di pasaran untuk berdiri
+                    keluar dari pesaing.
                   </p>
                   <ul className="mt-4 space-y-2">
                     {[
-                      "Brand identity",
-                      "Competitive analysis",
-                      "Audience targeting",
+                      "Identitas merek",
+                      "Analisis kompetitif",
+                      "Penargetan audiens",
                     ].map((item, i) => (
                       <li key={i} className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
@@ -213,11 +216,11 @@ export default function Home() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              How It Works
+              Cara kerjanya
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Our proven process to help you achieve sustainable growth on
-              social media.
+              Proses kami yang terbukti untuk membantu Anda mencapai pertumbuhan
+              berkelanjutan media sosial.
             </p>
           </MotionDiv>
 
@@ -225,23 +228,23 @@ export default function Home() {
             {[
               {
                 step: "01",
-                title: "Discovery Call",
+                title: "Panggilan penemuan",
                 description:
-                  "We start with a free consultation to understand your business, goals, and current challenges.",
+                  "Kami mulai dengan konsultasi gratis untuk memahami bisnis, tujuan, dan tantangan Anda saat ini.",
                 delay: 0.1,
               },
               {
                 step: "02",
-                title: "Strategy Development",
+                title: "Pengembangan Strategi",
                 description:
-                  "We create a customized strategy tailored to your specific business needs and target audience.",
+                  "Kami membuat strategi khusus yang disesuaikan dengan kebutuhan bisnis spesifik Anda dan target audiens.",
                 delay: 0.2,
               },
               {
                 step: "03",
-                title: "Implementation & Growth",
+                title: "Implementasi & Pertumbuhan",
                 description:
-                  "We guide you through implementing the strategy and continuously optimize for maximum results.",
+                  "Kami memandu Anda melalui penerapan strategi dan terus mengoptimalkan hasil maksimal.",
                 delay: 0.3,
               },
             ].map((item, i) => (
@@ -272,7 +275,7 @@ export default function Home() {
 
           <div className="mt-12 text-center">
             <Button size="lg" asChild>
-              <Link href="/contact">Get Started Today</Link>
+              <Link href="/hubungi">Mulailah hari ini</Link>
             </Button>
           </div>
         </div>
@@ -288,37 +291,37 @@ export default function Home() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              What Our Clients Say
+              Apa Klien Kami
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Don't just take our word for it. Here's what our clients have
-              achieved with our help.
+              Jangan hanya mengambil kata -kata kita untuk itu.Inilah yang
+              dimiliki klien kami dicapai dengan bantuan kami.
             </p>
           </MotionDiv>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                name: "Sarah Johnson",
-                business: "Wellness Coach",
+                name: "Michael Santoso",
+                business: "Pelatih Wellness",
                 quote:
-                  "Working with Tomio transformed my social media presence. I've gained over 10,000 followers in just 3 months and my engagement has tripled!",
+                  "Bekerja dengan Tomio mengubah kehadiran media sosial saya.Saya telah memperoleh lebih dari 10.000 pengikut hanya dalam 3 bulan dan pertunangan saya telah meningkat tiga kali lipat!",
                 image: "/people-1.webp",
                 delay: 0.1,
               },
               {
-                name: "Michael Chen",
-                business: "E-commerce Store Owner",
+                name: "Ema Soebadjo",
+                business: "Pemilik toko e-commerce",
                 quote:
-                  "The strategies Tomio provided helped me increase my conversion rate by 45%. My TikTok now drives consistent traffic to my store every day.",
+                  "Strategi yang disediakan Tomio membantu saya meningkatkan tingkat konversi saya sebesar 45%.Tiktok saya sekarang mengarahkan lalu lintas yang konsisten ke toko saya setiap hari.",
                 image: "/people-2.webp",
                 delay: 0.2,
               },
               {
-                name: "Emma Rodriguez",
-                business: "Fitness Influencer",
+                name: "Nuraini Suria",
+                business: "Influencer kebugaran",
                 quote:
-                  "Tomio helped me refine my brand messaging and content strategy. I'm now working with major brands and have doubled my income.",
+                  "Tomio membantu saya memperbaiki pesan merek dan strategi konten saya.Saya sekarang bekerja dengan merek -merek besar dan telah menggandakan penghasilan saya.",
                 image: "/people-3.webp",
                 delay: 0.3,
               },
@@ -366,14 +369,15 @@ export default function Home() {
           <div className="bg-primary/10 rounded-2xl p-8 md:p-12">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Ready to Grow Your Online Presence?
+                Siap menumbuhkan kehadiran online Anda?
               </h2>
               <p className="text-lg mb-8">
-                Book a free consultation today and discover how we can help you
-                achieve sustainable growth on Instagram and TikTok.
+                Pesan konsultasi gratis hari ini dan temukan bagaimana kami
+                dapat membantu Anda mencapai pertumbuhan berkelanjutan di
+                Instagram dan Tiktok.
               </p>
               <Button size="lg" asChild>
-                <Link href="/contact">Book Your Free Consultation</Link>
+                <Link href="/hubungi">Pesan konsultasi gratis Anda</Link>
               </Button>
             </div>
           </div>

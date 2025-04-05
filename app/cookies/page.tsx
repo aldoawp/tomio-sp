@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 
 export default function CookiesPage() {
   return (
@@ -8,79 +8,107 @@ export default function CookiesPage() {
 
         <div className="prose prose-lg max-w-none">
           <p>
-            This Cookie Policy explains how Tomio uses cookies and similar technologies to recognize you when you visit
-            our website. It explains what these technologies are and why we use them, as well as your rights to control
-            our use of them.
+            Kebijakan cookie ini menjelaskan bagaimana Tomio menggunakan cookie
+            dan teknologi serupa untuk mengenali Anda saat Anda berkunjung Situs
+            web kami.Ini menjelaskan apa teknologi ini dan mengapa kami
+            menggunakannya, serta hak Anda untuk mengendalikan kita
+            menggunakannya.
           </p>
 
-          <h2>1. What Are Cookies?</h2>
+          <h2> 1.Apa itu cookie? </h2>
           <p>
-            Cookies are small data files that are placed on your computer or mobile device when you visit a website.
-            Cookies are widely used by website owners to make their websites work, or to work more efficiently, as well
-            as to provide reporting information.
+            Cookie adalah file data kecil yang ditempatkan di komputer atau
+            perangkat seluler Anda saat Anda mengunjungi situs web. Cookie
+            banyak digunakan oleh pemilik situs web untuk membuat situs web
+            mereka berfungsi, atau juga bekerja lebih efisien untuk memberikan
+            informasi pelaporan.
           </p>
 
-          <h2>2. Why Do We Use Cookies?</h2>
-          <p>We use cookies for several reasons:</p>
+          <h2> 2.Mengapa kita menggunakan cookie? </h2>
+          <p> Kami menggunakan cookie karena beberapa alasan: </p>
           <ul>
-            <li>Essential cookies: These are necessary for the website to function properly</li>
             <li>
-              Analytical/performance cookies: These allow us to recognize and count the number of visitors and see how
-              visitors move around our website
+              {" "}
+              Cookie Esensial: Ini diperlukan agar situs web ini berfungsi
+              dengan baik{" "}
             </li>
-            <li>Functionality cookies: These are used to recognize you when you return to our website</li>
             <li>
-              Targeting cookies: These record your visit to our website, the pages you have visited, and the links you
-              have followed
+              Cookie Analitik/Kinerja: Ini memungkinkan kami untuk mengenali dan
+              menghitung jumlah pengunjung dan melihat caranya Pengunjung
+              bergerak di sekitar situs web kami
+            </li>
+            <li>
+              {" "}
+              Cookie Fungsi: Ini digunakan untuk mengenali Anda saat Anda
+              kembali ke situs web kami{" "}
+            </li>
+            <li>
+              Menargetkan Cookie: Ini mencatat kunjungan Anda ke situs web kami,
+              halaman yang telah Anda kunjungi, dan tautan Anda telah mengikuti
             </li>
           </ul>
 
-          <h2>3. Types of Cookies We Use</h2>
-          <p>The specific types of cookies served through our website and the purposes they perform include:</p>
+          <h2> 3.Jenis cookie yang kami gunakan </h2>
+          <p>
+            {" "}
+            Jenis cookie spesifik yang disajikan melalui situs web kami dan
+            tujuan yang mereka lakukan meliputi:{" "}
+          </p>
           <ul>
             <li>
-              <strong>Session Cookies:</strong> These cookies are temporary and expire once you close your browser
+              <strong> cookie sesi: </strong> cookie ini bersifat sementara dan
+              kedaluwarsa setelah Anda menutup browser Anda
             </li>
             <li>
-              <strong>Persistent Cookies:</strong> These cookies remain on your device until you delete them or they
-              expire
+              <strong> cookie persisten: </strong> cookie ini tetap ada di
+              perangkat Anda sampai Anda menghapusnya atau mereka berakhir
             </li>
             <li>
-              <strong>First-Party Cookies:</strong> These are cookies that belong to Tomio
+              <strong> cookie pihak pertama: </strong> ini adalah cookie milik
+              Tomio
             </li>
             <li>
-              <strong>Third-Party Cookies:</strong> These are cookies that another party places on your device through
-              our website
+              <strong> cookie pihak ketiga: </strong> Ini adalah cookie yang
+              ditempatkan oleh pihak lain di perangkat Anda Situs web kami
             </li>
           </ul>
 
-          <h2>4. How to Control Cookies</h2>
+          <h2> 4.Cara mengontrol cookie </h2>
           <p>
-            You can set or amend your web browser controls to accept or refuse cookies. If you choose to reject cookies,
-            you may still use our website though your access to some functionality and areas of our website may be
-            restricted.
+            Anda dapat mengatur atau mengubah kontrol browser web Anda untuk
+            menerima atau menolak cookie.Jika Anda memilih untuk menolak cookie,
+            Anda mungkin masih menggunakan situs web kami melalui akses Anda ke
+            beberapa fungsi dan area situs web kami terbatas.
           </p>
 
-          <h2>5. Updates to This Cookie Policy</h2>
+          <h2> 5.Pembaruan Kebijakan Cookie ini </h2>
           <p>
-            We may update this Cookie Policy from time to time in order to reflect, for example, changes to the cookies
-            we use or for other operational, legal, or regulatory reasons. Please therefore re-visit this Cookie Policy
-            regularly to stay informed about our use of cookies and related technologies.
+            Kami dapat memperbarui kebijakan cookie ini dari waktu ke waktu
+            untuk mencerminkan, misalnya, perubahan pada cookie Kami menggunakan
+            atau untuk alasan operasional, hukum, atau peraturan lainnya.Oleh
+            karena itu mohon kunjungi kembali kebijakan cookie ini Secara
+            teratur untuk tetap mendapat informasi tentang penggunaan cookie dan
+            teknologi terkait kami.
           </p>
 
-          <h2>6. Contact Us</h2>
+          <h2> 6.Hubungi kami </h2>
           <p>
-            If you have any questions about our use of cookies or other technologies, please contact us at{" "}
-            <Link href="mailto:contact@tomio.com" className="text-primary hover:underline">
+            Jika Anda memiliki pertanyaan tentang penggunaan cookie atau
+            teknologi lainnya, silakan hubungi kami di{" "}
+            <Link
+              href="mailto:contact@tomio.com"
+              className="text-primary hover:underline"
+            >
               contact@tomio.com
             </Link>
             .
           </p>
 
-          <p className="mt-8">Last updated: {new Date().toLocaleDateString()}</p>
+          <p className="mt-8">
+            Terakhir diperbarui: {new Date().toLocaleDateString()}
+          </p>
         </div>
       </div>
     </div>
-  )
+  );
 }
-

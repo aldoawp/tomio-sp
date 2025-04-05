@@ -29,11 +29,11 @@ export default function AboutPage() {
               transition={{ duration: 0.5 }}
             >
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                About Tomio
+                Tentang Tomio{" "}
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                We help entrepreneurs and small businesses grow their online
-                presence through strategic, organic marketing.
+                Kami membantu pengusaha dan usaha kecil tumbuh secara online
+                Kehadiran melalui pemasaran organik yang strategis.{" "}
               </p>
             </MotionDiv>
           </div>
@@ -66,21 +66,21 @@ export default function AboutPage() {
               transition={{ duration: 0.5 }}
               className="space-y-6"
             >
-              <h2 className="text-3xl md:text-4xl font-bold">Our Mission</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">Misi kami</h2>
               <p className="text-lg text-muted-foreground">
-                At Tomio, we believe that every business deserves to thrive in
-                the digital landscape without relying on expensive paid
-                advertising.
+                Di Tomio, kami percaya bahwa setiap bisnis layak untuk
+                berkembang lanskap digital tanpa mengandalkan bayaran mahal
+                iklan.{" "}
               </p>
               <p className="text-lg text-muted-foreground">
-                Our mission is to empower entrepreneurs and small businesses
-                with the strategies, knowledge, and support they need to build a
-                strong online presence organically.
+                Misi kami adalah memberdayakan pengusaha dan usaha kecil dengan
+                strategi, pengetahuan, dan dukungan yang mereka butuhkan untuk
+                membangun a Kehadiran online yang kuat secara organik.{" "}
               </p>
               <p className="text-lg text-muted-foreground">
-                We focus on sustainable growth tactics that create genuine
-                connections with your audience, turning followers into loyal
-                customers.
+                Kami fokus pada taktik pertumbuhan berkelanjutan yang
+                menciptakan asli Koneksi dengan audiens Anda, mengubah pengikut
+                menjadi loyal pelanggan.{" "}
               </p>
             </MotionDiv>
           </div>
@@ -96,9 +96,9 @@ export default function AboutPage() {
             transition={{ duration: 0.5 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Values</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Nilai -nilai kita</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              The principles that guide everything we do at Tomio.
+              Prinsip -prinsip yang memandu semua yang kami lakukan di Tomio.{" "}
             </p>
           </MotionDiv>
 
@@ -106,23 +106,23 @@ export default function AboutPage() {
             {[
               {
                 icon: <Users className="h-8 w-8 text-primary" />,
-                title: "Client-Centered Approach",
+                title: "Pendekatan yang berpusat pada klien",
                 description:
-                  "We put our clients' needs first, creating customized strategies that align with their unique goals and vision.",
+                  "Kami mengutamakan kebutuhan klien kami, menciptakan strategi khusus yang selaras dengan tujuan dan visi unik mereka.",
                 delay: 0.1,
               },
               {
                 icon: <Lightbulb className="h-8 w-8 text-primary" />,
-                title: "Innovation & Creativity",
+                title: "Inovasi & Kreativitas",
                 description:
-                  "We stay ahead of trends and constantly explore new ways to help our clients stand out in crowded digital spaces.",
+                  "Kami tetap di depan tren dan terus mengeksplorasi cara -cara baru untuk membantu klien kami menonjol di ruang digital yang ramai.",
                 delay: 0.2,
               },
               {
                 icon: <TrendingUp className="h-8 w-8 text-primary" />,
-                title: "Sustainable Growth",
+                title: "Pertumbuhan berkelanjutan",
                 description:
-                  "We focus on long-term strategies that build genuine connections rather than quick, unsustainable gains.",
+                  "Kami fokus pada strategi jangka panjang yang membangun koneksi asli daripada keuntungan yang cepat dan tidak berkelanjutan.",
                 delay: 0.3,
               },
             ].map((value, i) => (
@@ -154,11 +154,11 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Our Expertise
+              Keahlian kami{" "}
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              With years of experience in digital marketing, we bring
-              specialized knowledge to help your business succeed.
+              Dengan pengalaman bertahun -tahun dalam pemasaran digital, kami
+              bawa Pengetahuan khusus untuk membantu bisnis Anda berhasil.{" "}
             </p>
           </div>
 
@@ -166,7 +166,7 @@ export default function AboutPage() {
             <Card>
               <CardContent className="pt-6">
                 <h3 className="text-xl font-bold mb-4">
-                  Social Media Strategy
+                  Strategi Media Sosial{" "}
                 </h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -174,8 +174,8 @@ export default function AboutPage() {
                       <ArrowRight className="h-4 w-4 text-primary" />
                     </div>
                     <p>
-                      Content planning and creation that resonates with your
-                      target audience
+                      Perencanaan dan pembuatan konten yang beresonansi dengan
+                      Anda Target audiens{" "}
                     </p>
                   </li>
                   <li className="flex items-start gap-3">
@@ -183,7 +183,8 @@ export default function AboutPage() {
                       <ArrowRight className="h-4 w-4 text-primary" />
                     </div>
                     <p>
-                      Engagement tactics that build community and foster loyalty
+                      Taktik keterlibatan yang membangun komunitas dan
+                      menumbuhkan loyalitas{" "}
                     </p>
                   </li>
                   <li className="flex items-start gap-3">
@@ -191,8 +192,8 @@ export default function AboutPage() {
                       <ArrowRight className="h-4 w-4 text-primary" />
                     </div>
                     <p>
-                      Analytics and performance tracking to continuously
-                      optimize results
+                      Analitik dan pelacakan kinerja terus menerus
+                      mengoptimalkan hasil{" "}
                     </p>
                   </li>
                 </ul>
@@ -201,14 +202,21 @@ export default function AboutPage() {
 
             <Card>
               <CardContent className="pt-6">
-                <h3 className="text-xl font-bold mb-4">Brand Development</h3>
+                <h3 className="text-xl font-bold mb-4">Pengembangan Merek</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <div className="bg-primary/10 p-1 rounded-full mt-1">
                       <ArrowRight className="h-4 w-4 text-primary" />
                     </div>
+                    <p>Posisi merek yang membedakan Anda dari pesaing </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="bg-primary/10 p-1 rounded-full mt-1">
+                      <ArrowRight className="h-4 w-4 text-primary" />
+                    </div>
                     <p>
-                      Brand positioning that differentiates you from competitors
+                      Pesan yang dengan jelas mengomunikasikan nilai unik Anda
+                      dalil{" "}
                     </p>
                   </li>
                   <li className="flex items-start gap-3">
@@ -216,17 +224,8 @@ export default function AboutPage() {
                       <ArrowRight className="h-4 w-4 text-primary" />
                     </div>
                     <p>
-                      Messaging that clearly communicates your unique value
-                      proposition
-                    </p>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="bg-primary/10 p-1 rounded-full mt-1">
-                      <ArrowRight className="h-4 w-4 text-primary" />
-                    </div>
-                    <p>
-                      Visual identity guidance that creates a cohesive brand
-                      experience
+                      Bimbingan identitas visual yang menciptakan merek yang
+                      kohesif pengalaman{" "}
                     </p>
                   </li>
                 </ul>
@@ -241,14 +240,15 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Work With Us?
+              Siap bekerja dengan kami?{" "}
             </h2>
             <p className="text-lg mb-8">
-              Let's discuss how we can help you achieve your digital marketing
-              goals and grow your online presence.
+              Mari kita bahas bagaimana kami dapat membantu Anda mencapai
+              pemasaran digital Anda tujuan dan menumbuhkan kehadiran online
+              Anda.{" "}
             </p>
             <Button size="lg" asChild>
-              <Link href="/contact">Contact Us Today</Link>
+              <Link href="/hubungi">Hubungi kami hari ini</Link>
             </Button>
           </div>
         </div>
